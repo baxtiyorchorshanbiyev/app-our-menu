@@ -1,0 +1,103 @@
+// ----------------------GENERAL STYLE START---------------
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// -----------------------TITLE STYLE START--------------
+.title {
+    margin-top: 140px;
+    .underline{
+      width: 50px;
+      height: 4px;
+      background-color: aqua;
+    }
+}
+
+// ----------------OUR-MENU---------------------
+.card{
+  height: 300px;
+  border: 4px solid coral;
+  img{
+    height: 100%;
+  }
+}
+.parent{
+  position: relative;
+  p{
+    color:#000;
+    font-size: 16px;
+    padding:10px 0px;
+  }
+  .price{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    h3{
+      font-size: 22px;
+      font-weight: 800;
+      text-transform: lowercase;
+    }
+    .price-number{
+      font-size: 22px;
+      font-weight: 600;
+      color: coral;
+    }
+  }
+  .btn{
+    color:#fff;
+    background-color: black;
+    &:focus{
+      box-shadow: none;
+    }
+    &:hover{
+      background-color: #fff;
+      color:coral;
+      border: 1px solid #000;
+    }
+  }
+  .control{
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+  }
+}
+.btn2{
+  background-color: #fff;
+  color:aqua;;
+  border: none!important;
+}
+// ---------------CATEGORY-----------------
+main{
+  width: 100%;
+  .btn-content {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    @media(max-width:336px){
+      display:block!important;
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .btn-category{
+      color:coral;
+      border: 2px solid coral;
+      padding: 5px 10px!important;
+      &:focus{
+        box-shadow: none;
+      }
+      @media(max-width:768px){
+        margin: 20px 5px!important;
+        color:coral;
+        border: 2px solid coral;
+      }
+      @media(max-width:336px){
+        color:coral;
+        border: 2px solid coral;
+        display: block;
+        margin: 10px auto!important;
+      }
+    }
+  }
+}
